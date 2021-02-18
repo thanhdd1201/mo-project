@@ -19,7 +19,7 @@
       <v-btn class="list-navigation-drawer__btn" rounded block color="#FF3D3D">DONATION</v-btn>
     </v-navigation-drawer>
     <div class="mo-header">
-      <img alt="Logo" src="~assets/icons/mologo.svg">
+      <NuxtLink to="/"><img alt="Logo" src="~assets/icons/mologo.svg"></NuxtLink>
       <v-toolbar-title class="header-title">
         <v-toolbar-items class="header-title--main">Á Space Virtual No.1:</v-toolbar-items>
         <v-toolbar-items class="header-title--main">(Tôi, Những sự tồn tại khác)</v-toolbar-items>
@@ -32,44 +32,13 @@
 
 <script>
 export default {
-  name: "header",
+  name: "homepage-header",
+  props: ['items'],
   data() {
     return {
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          id: '01',
-          title: 'VIDEOS',
-          to: '/'
-        },
-        {
-          id: '02',
-          title: 'SOUND/ AUDIO-VISUAL',
-          to: '/inspire'
-        },
-        {
-          id: '03',
-          title: 'PERFORMANCE/ LIVESTREAM',
-          to: '/inspire'
-        },
-        {
-          id: '04',
-          title: 'PHOTOGRAPHY',
-          to: '/inspire'
-        },
-        {
-          id: '05',
-          title: 'OTHERS',
-          to: '/inspire'
-        },
-        {
-          id: '06',
-          title: 'MƠ HỎI MỞ - MO?',
-          to: '/inspire'
-        }
-      ],
       miniVariant: false,
       right: true,
       rightDrawer: false,

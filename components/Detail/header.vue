@@ -8,7 +8,7 @@
           <v-list-item-action class="list-navigation-drawer__item--id">
             {{ item.id }}
           </v-list-item-action>
-          <v-list-item-content>
+          <v-list-item-content @click="getPage(i)">
             {{ item.title }}
           </v-list-item-content>
         </v-list-item>
@@ -19,9 +19,9 @@
       <v-btn class="list-navigation-drawer__btn" rounded block color="#FF3D3D">DONATION</v-btn>
     </v-navigation-drawer>
     <div class="mo-header">
-      <img alt="Logo" src="~assets/icons/mologo.svg">
+      <NuxtLink to="/"><img alt="Logo" src="~assets/icons/mologo.svg"></NuxtLink>
       <v-toolbar-title class="header-title">
-        <v-toolbar-items class="header-title--main">{{ block }}</v-toolbar-items>
+        <v-toolbar-items class="header-title--main">{{ title }}</v-toolbar-items>
       </v-toolbar-title>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
     </div>
@@ -31,53 +31,56 @@
 <script>
 export default {
   name: "header",
-  props: {
-    block: {
-      type: String,
-      default: 'PHOTOGRAPHY'
-    }
-  },
   data() {
     return {
+      title: '',
       clipped: false,
       drawer: false,
-      fixed: false,
       items: [
         {
           id: '01',
           title: 'VIDEOS',
-          to: '/'
+          to: '/video',
+          isClick: false
         },
         {
           id: '02',
           title: 'SOUND/ AUDIO-VISUAL',
-          to: '/inspire'
+          to: '/audio-visual',
+          isClick: false
         },
         {
           id: '03',
           title: 'PERFORMANCE/ LIVESTREAM',
-          to: '/inspire'
+          to: '/performance',
+          isClick: false
         },
         {
           id: '04',
           title: 'PHOTOGRAPHY',
-          to: '/inspire'
+          to: '/photography',
+          isClick: false
         },
         {
           id: '05',
           title: 'OTHERS',
-          to: '/inspire'
+          to: '/others',
+          isClick: false
         },
         {
           id: '06',
           title: 'MƠ HỎI MỞ - MO?',
-          to: '/inspire'
+          to: '/about-us',
+          isClick: false
         }
       ],
       miniVariant: false,
       right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+    }
+  },
+  methods: {
+    getPage (index) {
+      this.title = this.items[index].title
     }
   }
 }
@@ -86,6 +89,8 @@ export default {
 <style scoped lang="scss">
 .mo-header {
   background-color: #fff;
+  width: 100vw;
+  padding: 0 50px;
   display: grid;
   grid-template-columns: auto 1fr auto;
 
@@ -126,6 +131,12 @@ export default {
   &__btn {
     color: #fff;
     font-weight: 700;
+  }
+
+  ::v-deep .v-navigation-drawer {
+    &__content {
+      overflow-y: hidden;
+    }
   }
 }
 </style>

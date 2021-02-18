@@ -1,17 +1,52 @@
 <template>
   <v-app class="container">
-    <header/>
-    <nuxt />
+    <default-header :items="items"/>
+    <nuxt/>
   </v-app>
 </template>
 
 <script>
-import header from "../components/Detail/header"
+import DefaultHeader from "../components/Detail/header"
+
 export default {
   components: {
-    header: header
+    DefaultHeader: DefaultHeader
   },
-
+  data() {
+    return {
+      items: [
+        {
+          id: '01',
+          title: 'VIDEOS',
+          to: '/video'
+        },
+        {
+          id: '02',
+          title: 'SOUND/ AUDIO-VISUAL',
+          to: '/video'
+        },
+        {
+          id: '03',
+          title: 'PERFORMANCE/ LIVESTREAM',
+          to: '/video'
+        },
+        {
+          id: '04',
+          title: 'PHOTOGRAPHY',
+          to: '/photography'
+        },
+        {
+          id: '05',
+          title: 'OTHERS',
+          to: '/inspire'
+        },
+        {
+          id: '06',
+          title: 'MƠ HỎI MỞ - MO?',
+          to: '/inspire'
+        }
+      ],
+    }  }
 }
 </script>
 <style lang="scss" scoped>
