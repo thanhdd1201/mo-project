@@ -1,10 +1,17 @@
 .container {
   background: #fff;
 }
-.video {
-  width: min(853px, 90vw);
-  height: 480px;
+.thumbnail {
+  width: 40vw;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
+
+.art-container {
+  height: 100%;
+  margin-top: 5rem;
+}
+
 @media only screen and (max-width: 600px) {
   .video {
     height: 20vh;

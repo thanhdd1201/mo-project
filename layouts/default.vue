@@ -23,30 +23,26 @@ export default {
         {
           id: '02',
           title: 'SOUND/ AUDIO-VISUAL',
-          to: '/video'
+          to: '/audio-visual'
         },
         {
           id: '03',
-          title: 'PERFORMANCE/ LIVESTREAM',
-          to: '/video'
-        },
-        {
-          id: '04',
           title: 'PHOTOGRAPHY',
           to: '/photography'
         },
         {
-          id: '05',
+          id: '04',
           title: 'OTHERS',
-          to: '/inspire'
+          to: '/others'
         },
         {
-          id: '06',
+          id: '05',
           title: 'MƠ HỎI MỞ - MO?',
-          to: '/inspire'
+          to: '/about-us'
         }
       ],
-    }  }
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>

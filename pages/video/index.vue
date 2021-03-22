@@ -10,7 +10,7 @@
 
 <script>
 import {Carousel, Slide} from 'vue-carousel'
-import ArtWorkContainer from "@/components/Common/ArtWorkContainer";
+import ArtWorkContainer from "@/components/Common/ArtWorkThumbnail";
 export default {
   components: {
     ArtWorkContainer,

@@ -41,8 +41,7 @@ export default {
       fixed: false,
       miniVariant: false,
       right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      rightDrawer: false
     }
   }
 }

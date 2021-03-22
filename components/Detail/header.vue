@@ -31,49 +31,17 @@
 <script>
 export default {
   name: "header",
+  props: {
+    items: {
+      type: Array,
+      default: () => []
+    }
+  },
   data() {
     return {
       title: '',
       clipped: false,
       drawer: false,
-      items: [
-        {
-          id: '01',
-          title: 'VIDEOS',
-          to: '/video',
-          isClick: false
-        },
-        {
-          id: '02',
-          title: 'SOUND/ AUDIO-VISUAL',
-          to: '/audio-visual',
-          isClick: false
-        },
-        {
-          id: '03',
-          title: 'PERFORMANCE/ LIVESTREAM',
-          to: '/performance',
-          isClick: false
-        },
-        {
-          id: '04',
-          title: 'PHOTOGRAPHY',
-          to: '/photography',
-          isClick: false
-        },
-        {
-          id: '05',
-          title: 'OTHERS',
-          to: '/others',
-          isClick: false
-        },
-        {
-          id: '06',
-          title: 'MƠ HỎI MỞ - MO?',
-          to: '/about-us',
-          isClick: false
-        }
-      ],
       miniVariant: false,
       right: true,
     }
