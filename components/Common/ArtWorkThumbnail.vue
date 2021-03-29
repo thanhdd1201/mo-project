@@ -3,17 +3,19 @@
     <div class="d-flex">
       <div class="infographic-block">
         <div class="infographic-block__name">{{ artDetail.name }}</div>
-        <div class="infographic-block__artist">{{ artDetail.artist }}</div>
+        <div class="infographic-block__artist">{{ artDetail.artistName }}</div>
       </div>
       <nuxt-link tag="img" class="thumbnail" :src="artDetail.thumbnail"
-                 :to="{name:'photography-id', params: {id: artDetail.id}}"/>
+                 :to="{name:'photography-name', params: {id: artDetail.id, name: artDetail.name}}"/>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: "ArtWorkThumbnail",
+
   props: {
     artDetail: {
       type: Object,
@@ -21,11 +23,7 @@ export default {
       }
     }
   },
-  methods: {
-    toDetailPage() {
-      router.push({name: 'photoDetail', params: {name: 123}})
-    }
-  }
+  methods: {}
 }
 </script>
 
@@ -40,10 +38,11 @@ export default {
 .art-work-container .infographic-block {
   display: flex;
   flex-direction: column;
+  margin-right: 15px;
 }
 
 .art-work-container .infographic-block__name {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .art-work-container .infographic-block__artist {

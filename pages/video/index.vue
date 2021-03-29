@@ -1,8 +1,8 @@
 <template>
-  <div class="video-container">
-    <carousel :scrollPerPage="true" :paginationEnabled="false" :perPage="1" :paginationPadding="0">
-      <slide v-for="video in videos" :key="video.id">
-        <ArtWorkContainer :artDetail="video"/>
+  <div class="art-container">
+    <carousel :scrollPerPage="true" :paginationEnabled="false" :center-mode="true" :perPage="1" :paginationPadding="0">
+      <slide v-for="video in videos" :key="video.id" >
+        <ArtWorkThumbnail :artDetail="video"/>
       </slide>
     </carousel>
   </div>
@@ -10,52 +10,21 @@
 
 <script>
 import {Carousel, Slide} from 'vue-carousel'
-import ArtWorkContainer from "@/components/Common/ArtWorkThumbnail";
+import ArtWorkThumbnail from "@/components/Common/ArtWorkThumbnail";
+import {video} from '@/pages/data.js'
+
 export default {
   components: {
-    ArtWorkContainer,
+    ArtWorkThumbnail,
     Carousel, Slide
   },
-  name: "VideoIndex",
-  data() {
+  name: "PhotographyIndex",
+  data () {
     return {
-      videos: [
-        {
-          id: 1,
-          name: 'Toi la ai',
-          description: 'Nhung su ton tai khac',
-          artist: 'Nguyen Linh Phuong Thao',
-          embedLink: 'https://www.youtube.com/embed/j_XnU1Yhyxc'
-        },
-        {
-          id: 2,
-          name: 'Toi la ai',
-          description: 'Nhung su ton tai khac',
-          artist: 'Nguyen Linh Phuong Thao',
-          embedLink: 'https://www.youtube.com/embed/j_XnU1Yhyxc'
-        },
-        {
-          id: 3,
-          name: 'Toi la ai',
-          description: 'Nhung su ton tai khac',
-          artist: 'Nguyen Linh Phuong Thao',
-          embedLink: 'https://www.youtube.com/embed/j_XnU1Yhyxc'
-        },
-        {
-          id: 4,
-          name: 'Toi la ai',
-          description: 'Nhung su ton tai khac',
-          artist: 'Nguyen Linh Phuong Thao',
-          embedLink: 'https://www.youtube.com/embed/j_XnU1Yhyxc'
-        },
-      ]
+      videos: video
     }
+  },
+  methods: {
   }
 }
 </script>
-
-<style scoped>
-.video-container {
-  padding: 50px 0 50px 35px;
-}
-</style>

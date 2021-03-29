@@ -1,0 +1,110 @@
+export const photography = [
+  {
+    id: 1,
+    name: 'NamoNamas',
+    nameVi: 'NamoNamas',
+    descriptionVi: 'Dự án “NamoNamas” được thực hiện kể từ năm 2018. Ban đầu, các tác phẩm đơn lẻ được thực hành với chủ đích chuyển hóa năng lượng tiêu cực thành cảm hứng sáng tác. Điểm chung của chúng là được sáng tác vào lúc cái “tôi” rơi vào hố thẳm và trong ý thức xảy ra một cuộc chạy trốn. Lúc này, các cuộc đối thoại được thiết lập để trả lời câu hỏi về sự hợp lý của nó.',
+    descriptionEn: '',
+    artistId: 1,
+    artistName: "Nguyễn Đức Hùng",
+    products: ['https://i.ibb.co/1JQHLr6/Trang-1.jpg',
+      'https://i.ibb.co/Wf30bJ4/Trang-2.jpg',
+      'https://i.ibb.co/fQhgxQx/Trang-5.jpg',
+      'https://i.ibb.co/Bjyzj8n/Trang-6-s-a.jpg',
+      'https://i.ibb.co/gF2gKQt/Processed-with-VSCO-with-fv5-preset.jpg',
+      'https://i.ibb.co/ssZ8p5g/Trang-8.jpg',
+      'https://i.ibb.co/4jZWrCY/Trang-9.jpg',
+      'https://i.ibb.co/cwgKXmb/Trang-10.jpg',
+      'https://i.ibb.co/vxy7syh/Trang-11.jpg',
+      'https://i.ibb.co/d6scWR3/Trang-13.jpg',
+      'https://i.ibb.co/BcXJwJ7/Trang-14-s-a.jpg',
+      'https://i.ibb.co/tB2gn90/Trang-14-15.jpg',
+      'https://i.ibb.co/4wLkFqj/Trang-15.jpg',
+      'https://i.ibb.co/Zd1KCHr/Trang-16.jpg',
+      'https://i.ibb.co/pPywhpd/Trang-17.jpg',
+      'https://i.ibb.co/C9GMZch/Trang-19.jpg',
+      'https://i.ibb.co/mbDj6KJ/Trang-20.jpg',
+      'https://i.ibb.co/pXPwTtX/Trang-21.jpg',
+      'https://i.ibb.co/wgftcSq/Trang-22.jpg',
+      'https://i.ibb.co/fqJ5sbW/Trang-23.jpg',
+      'https://i.ibb.co/r7B6V0Y/Trang-24.jpg',
+      'https://i.ibb.co/3yS5PHG/Trang-25-s-a.jpg',
+      'https://i.ibb.co/tQSCPwr/Trang-25-26.jpg',
+      'https://i.ibb.co/cr6LvmN/Trang-26.jpg',
+      'https://i.ibb.co/RYQWvgd/Trang-27.jpg',
+      'https://i.ibb.co/7z25mG5/Trang-28.jpg',
+    ],
+    thumbnail: 'https://i.ibb.co/1JQHLr6/Trang-1.jpg'
+  },
+  {
+    id: 2,
+    name: 'Insufficient',
+    nameVi: 'Không Đủ',
+    descriptionVi: 'Không Đủ đa phần là ký ức, đúng hơn là nỗi nhớ nhưng chẳng may thành không đủ. Tình yêu không đủ, thơ văn không đủ, sinh mệnh không đủ. Phải chăng là, sự phát triển đã kéo theo, tình không phải món quà, da thịt không khéo trở nên vô dụng. Ở đây không khác mấy với những thành phố khác, ở đây là ở đâu, ở đây có thể là ở bất cứ đâu hoặc không đâu cả. Ở đây (trong thực tại) là giữa căn phòng điều hòa và những người không cùng dòng điện từ chạy trong đầu. Nhìn đâu cũng thấy không đủ. Thế nên mức điểm, không đứng yên, và dễ dàng biến mất. Làm cách nào để biết khi nào đủ, ta cho một đoàn tàu chạy vô định, hình thành đường mòn trong não và tai. Đi vào rồi biến mất.\n' +
+      'Không Đủ ban đầu là một thực cảm với chiều sâu cá nhân, không có một rào cản cụ thể. Tác giả nhận thấy qua tính thực tiễn của việc thực hành nhiếp ảnh, là không có ràng buộc, ngoài việc cân bằng giữa lưu trữ và phong cách tự sự, tác giả không xác định tính chân thực cũng như phong thái người làm nhiếp ảnh. \n',
+    descriptionEn: 'Insufficient is mostly a memory, rather be nostalgia but unfortunately becomes insufficient. Not enough love, not enough poetry, not enough life. Is it that, the evolution entailed, love is not a gift, flesh becomes totally useless. Here it’s not that different from other cities, where is exactly here, here could be anywhere or nowhere. Here (in reality) between the air-conditioned room and those people who don’t have the same neuronal transmission. Nothing is enough wherever the gaze is. So in a scale where points never stand still, and easily disappear. How to know when is sufficient, for a train runs indefinitely, trails are formed in brain and ears. Come on in and disappear.\n' +
+      'Insufficient initially is a true feeling with personal depth, without any specific barriers. The author realizes through a reality of the photography practice, there are no strings attached, just keep the balance between archive and narrative style. The author no longer determines the authenticity as well as the manner of the photographer.\n',
+    artistId: '2',
+    artistName: 'UKi',
+    products: ['https://i.ibb.co/6PmmkV2/000001.jpg',
+      'https://i.ibb.co/7Qjw9Xx/1.jpg',
+      'https://i.ibb.co/ScVjSpt/000002.jpg',
+      'https://i.ibb.co/n3VDCzF/2.jpg',
+      'https://i.ibb.co/rMCr03T/000004.jpg',
+      'https://i.ibb.co/QvjGhMh/000005-2.jpg',
+      'https://i.ibb.co/5G558jC/000005.jpg',
+      'https://i.ibb.co/59cfGjs/0005-4.jpg',
+      'https://i.ibb.co/w6pxH48/0007-6.jpg',
+      'https://i.ibb.co/hDrLSz3/0015-14.jpg',
+      'https://i.ibb.co/pdRjqhs/0023-22.jpg',
+      'https://i.ibb.co/TPL1jLg/0024-23.jpg',
+      'https://i.ibb.co/hWVpg7y/000027.jpg',
+      'https://i.ibb.co/bXStR4m/000028.jpg',
+      'https://i.ibb.co/KrMGFJD/000028c.jpg',
+      'https://i.ibb.co/nk2q0PQ/000032.jpg',
+      'https://i.ibb.co/y8RccLj/000037-2.jpg',
+      'https://i.ibb.co/7z3Fx8s/000040.jpg',
+      'https://i.ibb.co/MPW1ksp/000041.jpg',
+      'https://i.ibb.co/vXy6fmL/000041c.jpg',
+      'https://i.ibb.co/8r0bC3q/000043.jpg',
+      'https://i.ibb.co/t84XmHT/000054.jpg',
+      'https://i.ibb.co/0ZPNVGx/000062.jpg',
+      'https://i.ibb.co/hm1PzP3/000063c.jpg',
+      'https://i.ibb.co/WWBP9H3/000064.jpg',
+      'https://i.ibb.co/2s5nXfM/000075.jpg',
+      'https://i.ibb.co/7YTkx4N/000097.jpg',
+      'https://i.ibb.co/Rzw0rLJ/000037100001.jpg',
+    ],
+    thumbnail: 'https://i.ibb.co/6PmmkV2/000001.jpg'
+  },
+  {
+    id: 3, //grid layout
+    name: 'Yes',
+    description: 'Dự án “NamoNamas” được thực hiện kể từ năm 2018. Ban đầu, các tác phẩm đơn lẻ được thực hành với chủ đích chuyển hóa năng lượng tiêu cực thành cảm hứng sáng tác. Điểm chung của chúng là được sáng tác vào lúc cái “tôi” rơi vào hố thẳm và trong ý thức xảy ra một cuộc chạy trốn. Lúc này, các cuộc đối thoại được thiết lập để trả lời câu hỏi về sự hợp lý của nó.',
+    artistId: '3', //yeshin lee
+    artistName: 'Yeshin Lee',
+    products: ['https://i.ibb.co/Qv0BpRC/Because-of-the-virus.png',
+      'https://i.ibb.co/R2j3krS/Black-Monday.png',
+      'https://i.ibb.co/3f8ntvb/jesus-icon.png',
+      'https://i.ibb.co/P9R73vv/now-online.png',
+      'https://i.ibb.co/WsQNPJf/second-wave.png',
+      'https://i.ibb.co/x1HmMM0/tell.png',
+      'https://i.ibb.co/zSS1HHy/travel-asia.png',
+      'https://i.ibb.co/zn1W7rj/unsubcribe.png',
+      'https://i.ibb.co/KG7hCWn/wash-your-hands.png',
+      'https://i.ibb.co/1Gd3g9C/you-know.png',
+      'https://i.ibb.co/gdwsn1z/1.png',
+      'https://i.ibb.co/yXMCLNS/2.png',
+    ],
+    thumbnail: 'https://i.ibb.co/Qv0BpRC/Because-of-the-virus.png'
+  },
+]
+
+export const video = []
+
+export const audioVisual = []
+
+export const others = []
+
+export const artists = []
+
