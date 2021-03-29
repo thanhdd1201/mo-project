@@ -51,6 +51,8 @@ export default {
   grid-template-rows: auto 1fr;
   background: #fff;
   width: 100%;
+  padding: 0;
+  margin: 0;
   max-width: 100%;
 }
 </style>
